@@ -10,6 +10,11 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import java.time.LocalDateTime;
 
+/**
+ * 모든 엔티티에 공통적으로 필요한 생성일과 수정일에 대한 BaseEntity입니다. 
+ * 
+ * 생성일과 수정일이 필요한 엔티티는 BaseEntity를 상속받아야 합니다.  
+ */
 @Getter
 @MappedSuperclass
 @EntityListeners(AuditingEntityListener.class)
