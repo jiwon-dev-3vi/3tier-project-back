@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 /**
- * 시간(LocalDateTiem, DateTime, ..) 포맷에 대한 util함수 입니다. 
+ * 시간(LocalDateTime, DateTime, ..) 포맷에 대한 util함수 입니다. 
  * 
  * 시간을 프론트가 원하는 형태로 변경해야하는 경우가 많을 것이라고 판단하여 추가해주었습니다.  
  */

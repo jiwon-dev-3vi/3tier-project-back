@@ -29,7 +29,7 @@ public class BoardController {
      * 게시글 생성 API
      * 
      * @body CreateBoardRequestDto [title, content]
-     * @return BoardResponseDto [id, title, content, createAt, modifiedAt]
+     * @return BoardResponseDto [id, title, content, createdAt, modifiedAt]
      */
     @PostMapping
     public ResponseEntity<BoardResponseDto> createBoard(
@@ -45,9 +45,9 @@ public class BoardController {
      * 게시글 전체 조회 API
      * @param page (페이지 번호)
      * @param size (페이지 내 요소 수)
-     * @return Page<BoardResponseDto> [id, title, content, createAt, modifiedAt]
+     * @return Page<BoardResponseDto> [id, title, content, createdAt, modifiedAt]
      */
-    @GetMapping("/all")
+    @GetMapping()
     public ResponseEntity<Page<BoardResponseDto>> getBoardsOrderByCreatedAt(
         @PageableDefault(sort = "createdAt", direction = Sort.Direction.DESC) Pageable pageable
     ) {

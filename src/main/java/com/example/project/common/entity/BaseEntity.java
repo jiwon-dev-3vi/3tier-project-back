@@ -27,6 +27,6 @@ public abstract class BaseEntity {
 
     // 조회한 엔티티의 값을 변경할 때 시간이 자동 저장됩니다.
     @LastModifiedDate
-    @Column(name = "updated_at")
-    private LocalDateTime modifieddAt;
+    @Column(name = "modified_at")
+    private LocalDateTime modifiedAt;
 }

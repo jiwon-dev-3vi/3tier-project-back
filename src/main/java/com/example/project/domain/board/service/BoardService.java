@@ -26,7 +26,7 @@ public class BoardService {
         return BoardResponseDto.of(
                 board,
                 TimeUtils.formatToDateTimeWithMinutes(board.getCreatedAt()),
-                TimeUtils.formatToDateTimeWithMinutes(board.getModifieddAt())
+                TimeUtils.formatToDateTimeWithMinutes(board.getModifiedAt())
         );
     }
 
@@ -39,7 +39,7 @@ public class BoardService {
             BoardResponseDto.of(
                 board,
                 TimeUtils.formatToDateTimeWithMinutes(board.getCreatedAt()),
-                TimeUtils.formatToDateTimeWithMinutes(board.getModifieddAt())
+                TimeUtils.formatToDateTimeWithMinutes(board.getModifiedAt())
             )
         );
     }
